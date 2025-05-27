@@ -4,6 +4,7 @@ from polite_rewriter import polish_text
 
 st.set_page_config(page_title="Email Toxicity Auto-Polisher", layout="wide")
 
+# Custom CSS for UI
 st.markdown("""
     <style>
         .title { font-size: 2.3rem; font-weight: bold; color: #2f80ed; }
@@ -13,6 +14,8 @@ st.markdown("""
             border-radius: 10px;
             background-color: #f9f9f9;
             border-left: 5px solid #2f80ed;
+            color: #111; /* Set text color to dark */
+            font-size: 1rem;
         }
         .toxic {
             background-color: #fff1f0;
