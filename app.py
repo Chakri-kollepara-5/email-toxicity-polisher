@@ -10,20 +10,32 @@ st.markdown("""
         .title { font-size: 2.3rem; font-weight: bold; color: #2f80ed; }
         .subtitle { font-size: 1.1rem; color: #666; }
         .box {
-            padding: 1rem;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-            border-left: 5px solid #2f80ed;
-            color: #111; /* Set text color to dark */
-            font-size: 1rem;
-        }
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #f9f9f9;  /* Or #fff or #e0ffe0 */
+    border-left: 5px solid #2f80ed;
+    color: #111 !important;  /* Force dark text */
+    font-size: 1rem;
+}
+.original-box {
+    background-color: #ffe6e6;
+    color: #111 !important;  /* 🔥 Fix for light pink box */
+}
+
+.polished-box {
+    background-color: #eaffea;
+    color: #111 !important;  /* 🔥 Fix for light green box */
+}
+
         .toxic {
             background-color: #fff1f0;
             border-left-color: #ff4d4f;
+            color:black
         }
         .polite {
             background-color: #f6ffed;
             border-left-color: #52c41a;
+            color:black
         }
         .label {
             font-weight: 600;
